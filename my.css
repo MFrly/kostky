@@ -1,0 +1,61 @@
+/* Styling pro animované kostky, tlačítko a střední zarovnání */
+body {
+  height: 100vh; /* 100% výšky viewportu */
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Umístění prvků ve sloupci */
+  justify-content: center;
+  align-items: center;
+  background-image: url('pozadi.jpg'); /* Přidání pozadí */
+  background-size: cover; /* Aby se pozadí přizpůsobilo velikosti okna */
+}
+
+.dice-container {
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px; /* Oddělení od kostek */
+}
+
+.dice {
+  font-family: 'Brush Script MT', cursive;
+  width: 150px; /* Zvětšení o 50% (původně 100px) */
+  height: 150px; /* Zvětšení o 50% (původně 100px) */
+  margin-right: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+button {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 25px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #8e44ad; /* Fialová barva */
+  color: aliceblue;
+  top: 10%; /* Bílá barva pro text */
+  border: 2px solid #000000; /* Černý okraj */
+}
+
+h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 55px;
+  color: aliceblue;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-decoration: underline;
+}
+
+p {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 25px;
+  color: aliceblue;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
